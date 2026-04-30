@@ -29,5 +29,5 @@ Esta é uma aplicação web desenvolvida durante as aulas de Python no SENAI. O 
 6. Inicie o servidor: `python manage.py runserver`
 
 ---
-🎨 **Desenvolvido por:** [SEU NOME AQUI]  
+🎨 **Desenvolvido por:** Gabriel José  
 🏫 **Instituição:** SENAI Sertãozinho

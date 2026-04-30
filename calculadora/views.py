@@ -41,3 +41,26 @@ def calcular_imc(request):
         'classificacao': classificacao
 	    }
     )
+def pagina1(x=None):
+    return render(x, 'calculadora/index2.html')
+
+def pagina3(x=None):
+    return render(x, 'calculadora/index3.html')
+
+def conversor_graus_kelvin(request):
+    result = None
+    if request.method == 'POST':
+        graus = float(request.POST.get('graus'))
+
+        kelvin = graus +  273.15
+
+        result = round(kelvin, 2)
+    return  render(request, 'calculadora/index4.html',
+        {
+            'result' : result
+        }               
+    )
+
+
+# conversor_graus_kelvin(100)
+
